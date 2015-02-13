@@ -11,14 +11,18 @@
 
     <com.liangfeizc.avatarview.AvatarView
         android:src="@drawable/nagasawa"
-        sample:border_width="10dp"
+        sample:border_width="5dp"
         sample:border_color="@android:color/white"
         sample:shadow_color="@android:color/holo_red_dark"
         sample:shadow_width="5dp"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
-    <ImageView
-        android:src="@drawable/nagasawa"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+        android:layout_width="400dp"
+        android:layout_height="400dp" />
+    <com.liangfeizc.avatarview.AvatarView
+        android:src="@drawable/horikita_maki"
+        sample:border_width="5dp"
+        sample:border_color="@android:color/white"
+        sample:shadow_color="@android:color/holo_red_dark"
+        sample:shadow_width="5dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp" />
 </LinearLayout>

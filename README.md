@@ -5,7 +5,7 @@ ImageView for avatar
 
 sample
 ---
-![]()
+![](http://img03.taobaocdn.com/imgextra/i3/160310864/TB2NFinbVXXXXX1XXXXXXXXXXXX_!!160310864.png)
 
 usage
 ---
