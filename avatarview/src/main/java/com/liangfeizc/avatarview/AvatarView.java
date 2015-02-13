@@ -60,7 +60,7 @@ public class AvatarView extends ImageView {
             mBorderColor = a.getColor(R.styleable.AvatarView_border_color, mBorderColor);
 
             mShadowWidth = a.getDimensionPixelSize(R.styleable.AvatarView_shadow_width, mShadowWidth);
-            mShadowColor = a.getDimensionPixelSize(R.styleable.AvatarView_shadow_color, mShadowColor);
+            mShadowColor = a.getColor(R.styleable.AvatarView_shadow_color, mShadowColor);
         } finally {
             a.recycle();
         }
@@ -90,7 +90,6 @@ public class AvatarView extends ImageView {
 
         initBorder();
         initBitmap();
-        updateShaderMatrix();
 
         int cx = getWidth() >> 1;
         int cy = getHeight() >> 1;
@@ -112,6 +111,7 @@ public class AvatarView extends ImageView {
         int outerWidth = mBorderWidth + mShadowWidth;
         mBitmapRect = new RectF(outerWidth, outerWidth, getWidth() - outerWidth, getHeight()- outerWidth);
         mBitmapRadius = Math.min(mBitmapRect.width() / 2, mBitmapRect.height() / 2);
+        updateShaderMatrix();
     }
 
     private Bitmap getBitmapFrom(Drawable drawable) {
