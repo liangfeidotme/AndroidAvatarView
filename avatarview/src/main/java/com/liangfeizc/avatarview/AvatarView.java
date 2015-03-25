@@ -44,7 +44,7 @@ public class AvatarView extends ImageView {
     private Paint mBorderPaint;
 
     public AvatarView(Context context) {
-        super(context);
+        this(context, attrs);
     }
 
     public AvatarView(Context context, AttributeSet attrs) {
@@ -69,7 +69,8 @@ public class AvatarView extends ImageView {
     }
 
     private void init() {
-        super.setScaleType(ScaleType.CENTER_CROP);
+        setScaleType(ScaleType.CENTER_CROP);
+
         mShaderMatrix = new Matrix();
 
         mBorderPaint = new Paint();
