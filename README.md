@@ -7,6 +7,13 @@ sample
 ---
 ![](http://img03.taobaocdn.com/imgextra/i3/160310864/TB2NFinbVXXXXX1XXXXXXXXXXXX_!!160310864.png)
 
+gradle
+---
+
+```groovy
+compile "com.liangfeizc:avatarview:0.0.1@aar"
+```
+
 usage
 ---
 ```xml
