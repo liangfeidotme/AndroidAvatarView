@@ -1,21 +1,25 @@
 AvatarView
 ===
 
-ImageView for avatar
+In most cases, we use a circle image view to display avatar, so why not just call it `AvatarImage`.
 
-sample
+In addition to the circle shape, `AvatarView` also provides an shadow around the circle.
+
+Demo
 ---
-![](http://img03.taobaocdn.com/imgextra/i3/160310864/TB2NFinbVXXXXX1XXXXXXXXXXXX_!!160310864.png)
 
-gradle
+![](art/sample.png)
+
+Dependency
 ---
 
 ```groovy
 compile "com.liangfeizc:avatarview:0.0.1@aar"
 ```
 
-usage
+Usage
 ---
+
 ```xml
 <com.liangfeizc.avatarview.AvatarView
     android:src="@drawable/nagasawa"
@@ -26,3 +30,9 @@ usage
     android:layout_width="200dp"
     android:layout_height="200dp" />
 ```
+
+License
+---
+
+    MIT
+
